@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox Simulator</title>
+        <link rel="stylesheet" href="TSA8.css">
+    </head>
+    <body>
+        <div class="controls">
+            <button id="resetFlexbox">Reset Flexbox</button>
+            <div>
+                <label for="gap">Gap</label>
+                <input type="number" id="gap" value="0">
+            </div>
+            <div>
+                <label>Flex Direction</label>
+                <button class="flex-direction" data-direction="row">Row</button>
+                <button class="flex-direction" data-direction="column">Column</button>
+            </div>
+            <div>
+                <label>Justify Content</label>
+                <button class="justify-content" data-justify="flex-start">Start</button>
+                <button class="justify-content" data-justify="center">Center</button>
+                <button class="justify-content" data-justify="flex-end">End</button>
+                <button class="justify-content" data-justify="space-between">Space Between</button>
+                <button class="justify-content" data-justify="space-around">Space Around</button>
+                <button class="justify-content" data-justify="space-evenly">Space Evenly</button>
+            </div>
+            <div>
+                <label>Align Items</label>
+                <button class="align-items" data-align="flex-start">Start</button>
+                <button class="align-items" data-align="center">Center</button>
+                <button class="align-items" data-align="flex-end">End</button>
+            </div>
+            <div>
+                <label>Flex Grow</label>
+                <button id="resetGrow">Reset</button>
+                <button id="growAll">Grow All</button>
+                <div>
+                    <label for="box1Grow">Box 1</label>
+                    <input type="number" id="box1Grow" value="0">
+                </div>
+                <div>
+                    <label for="box2Grow">Box 2</label>
+                    <input type="number" id="box2Grow" value="0">
+                </div>
+                <div>
+                    <label for="box3Grow">Box 3</label>
+                    <input type="number" id="box3Grow" value="0">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="items" id="box1">1</div>
+            <div class="items" id="box2">2</div>
+            <div class="items" id="box3">3</div>
+        </div>
+        <script src="TSA8.js"></script>
+    </body>
+    </html>
